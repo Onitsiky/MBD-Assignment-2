@@ -33,7 +33,7 @@ The cleaned dataset was split on the 70% traing, 15% test and  15% validation se
 
 The Baseline Logistic Regression Model trained shows the following initial results: </br>
 ### Classification Report
-![classfication report](assets/classfication_report.png)</ber>
+![classfication report](assets/classfication_report.png)</br>
 The model performs consistently across classes (0.8+ precision, recall, F1), with slightly better recall for NON_EXTREMIST (0.84) than EXTREMIST (0.79).
 Overall accuracy is stable at 82%, indicating balanced but slightly weaker detection of extremist content.</br>
 ![confusion matrix](assets/confusion-matrix.png)
