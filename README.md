@@ -64,9 +64,11 @@ The error validation can be found at [text](dataset-related_files/errors_validat
 - Non Extremist: Individual threats not considered as extremist and only looking at mostly the group tied extremism. E.g., let this hoe touch this kid i swear I will fucking kill you. Also when the content sarcarsm or jokes it might be wrongly classifed as Non Extremis.
 
 #### Proposed improvement
+* Balanced Model on Validation Set: it provides an honest, realistic measure of how the model will perform on completely new, unseen data; prevents "data leakage" and ensure that the accuracy that we get, is a true reflection of the model's predictive power.
 * Using TF-IDF with bigrams (1–2 grams) and class balancing: allows the model to capture context that single words miss, while class balancing ensures the model doesn't ignore the minority "Extremist" class.
 * Hyperparameter tunning (C Parameter): allows to find the "sweet spot" between a model that is too simple and one that is too complex. By calibrating this regularization strength, we ensure the Logistic Regression focuses on the most statistically significant patterns rather than getting distracted by "noise".
-* Balanced Model on Validation Set: it provides an honest, realistic measure of how the model will perform on completely new, unseen data; prevents "data leakage" and ensure that the accuracy that we get, is a true reflection of the model's predictive power.
+
+
 
 
 ### Repository
