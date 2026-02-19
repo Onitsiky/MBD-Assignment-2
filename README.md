@@ -2,15 +2,15 @@
 ## A. Quantitative Analysis
 * Dataset statistics
     * Dataset shape, size, class count, class distribution:
-![alt text](assets/dataset-content-summary.png)
+![dataset-content-summary](assets/dataset-content-summary.png)
     * Droping the duplicates in a dataset helps prevent Data Leakage
     * The dataset contained 1 missing value and no duplicated ones. One missing value was dropped, because since it was a categorical value, it won't be relevant to fill it with any place holder, or filling it with one of the most frequent data too (because we were just asked to drop duplicated value if there were).
     * Text characteristics
-![alt text](assets/class-text-comparison.png)
+![class-text-comparison](assets/class-text-comparison.png)
 
     For the new added columns, the above image shows that the **EXTREMIST** class is more extreme in its length while the **NON-EXTREMIST** class is more dense.
     * Visualizations
-![alt text](assets/class-distribution.png)
+![class-distribution](assets/class-distribution.png)
 This bar chart shows that the classes are well balanced.
 
 * Linguistic Analysis
@@ -30,7 +30,7 @@ The results show a 100% inter-human disagreement rate, meaning that for every ex
 
 ## C. ML Baseline Model
 The Baseline Logistic Regression Model trained shows the following initial report:
-![alt text](image-1)
+![confusion matrix](assets/confusion-matrix.png)
 **Strong True Positive** and **Strong True Negative** are to be noted here, meaning that the model is performing well catching up most of the true labels.
 
 On another side, the **almost symmetrical** statitics for both *false positive* and *false negative*  shows that the class balancing is working effectively.
