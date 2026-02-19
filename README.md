@@ -36,7 +36,7 @@ The Baseline Logistic Regression Model trained shows the following initial resul
 ![classfication report](assets/classfication_report.png)</br>
 The model performs consistently across classes (0.8+ precision, recall, F1), with slightly better recall for NON_EXTREMIST (0.84) than EXTREMIST (0.79).
 Overall accuracy is stable at 82%, indicating balanced but slightly weaker detection of extremist content.</br>
-![confusion matrix](assets/confusion-matrix.png)
+![confusion matrix](assets/confusion-matrix.png)</br>
 **Strong True Positive** and **Strong True Negative** are to be noted here, meaning that the model is performing well catching up most of the true labels.
 
 On another side, the **almost symmetrical** statitics for both *false positive* and *false negative*  shows that the class balancing is working effectively.
