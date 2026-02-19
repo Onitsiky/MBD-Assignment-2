@@ -1,4 +1,17 @@
+# <center>Kaggle Social Media Extremism Detection Challenge</center>
 # <center>Mobile Big Data Analytics & Management - Assignment 2</center>
+
+## Team Information
+
+**Team Name:** Environment  
+**Team Members:**  
+- Benitha Lounge Iyuyisenga
+- Cleophas Kadima
+- Denys Ntwaritaganzwa  
+- Robert Uwitonze  
+- Onitsiky Ranaivoson  
+
+  
 ## A. Quantitative Analysis
 * Dataset statistics
     * Dataset shape, size, class count, class distribution:
