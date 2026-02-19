@@ -29,13 +29,20 @@ This bar chart shows that the classes are well balanced.
 The results show a 100% inter-human disagreement rate, meaning that for every example at least one annotator disagreed with the others. This indicates that identifying extremist content in this dataset is highly subjective and often ambiguous. Several texts had three unique labels, suggesting strong differences in interpretation, especially in politically sensitive or indirectly harmful statements. Although disagreement was common, the majority vote still aligned with the original dataset labels in most cases, showing overall consistency with the dataset’s standards. However, in a few cases (IDs 15 and 23), the group labeled the content as EXTREMIST while the original label was NON_EXTREMIST, suggesting differences in how hate speech and extremism are defined. Overall, the findings highlight both the complexity of the task and the importance of clear annotation guidelines to improve labeling consistency.
 
 ## C. ML Baseline Model
-The Baseline Logistic Regression Model trained shows the following initial report:
+The cleaned dataset was split on the 70% traing, 15% test and  15% validation set with stratified to enforce class balance accross the splits. messages were incorded using TF-IDF and it was fitted with training data to avoid data leakage, classes were encoded 0: NON_EXTRIMIS AND 1: EXTRIMST. 
+
+The Baseline Logistic Regression Model trained shows the following initial results: </br>
+### Classification Report
+![classfication report](assets/classfication_report.png)</ber>
+The model performs consistently across classes (0.8+ precision, recall, F1), with slightly better recall for NON_EXTREMIST (0.84) than EXTREMIST (0.79).
+Overall accuracy is stable at 82%, indicating balanced but slightly weaker detection of extremist content.</br>
 ![confusion matrix](assets/confusion-matrix.png)
 **Strong True Positive** and **Strong True Negative** are to be noted here, meaning that the model is performing well catching up most of the true labels.
 
 On another side, the **almost symmetrical** statitics for both *false positive* and *false negative*  shows that the class balancing is working effectively.
 
 ## D. Required Error Analysis
+Out of 76 total misclassifications, 42 instances (55.3%) were incorrectly predicted as NON_EXTREMIST, while 34 instances (44.7%) were incorrectly predicted as EXTREMIST.
 ### 1. Systematic Error Review
 The error validation can be found at [text](dataset-related_files/errors_validation_10.csv)
 
