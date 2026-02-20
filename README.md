@@ -42,6 +42,7 @@ This bar chart shows that the classes are well balanced.
 The results show a 100% inter-human disagreement rate, meaning that for every example at least one annotator disagreed with the others. This indicates that identifying extremist content in this dataset is highly subjective and often ambiguous. Several texts had three unique labels, suggesting strong differences in interpretation, especially in politically sensitive or indirectly harmful statements. Although disagreement was common, the majority vote still aligned with the original dataset labels in most cases, showing overall consistency with the dataset’s standards. However, in a few cases (IDs 15 and 23), the group labeled the content as EXTREMIST while the original label was NON_EXTREMIST, suggesting differences in how hate speech and extremism are defined. Overall, the findings highlight both the complexity of the task and the importance of clear annotation guidelines to improve labeling consistency.
 
 ## C. ML Baseline Model
+![Split](assets/split.png)</br>
 The cleaned dataset was split on the 70% traing, 15% test and  15% validation set with stratified to enforce class balance accross the splits. messages were incorded using TF-IDF and it was fitted with training data to avoid data leakage, classes were encoded 0: NON_EXTRIMIS AND 1: EXTRIMST. 
 
 The Baseline Logistic Regression Model trained shows the following initial results: </br>
